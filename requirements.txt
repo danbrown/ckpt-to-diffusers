@@ -3,3 +3,4 @@ diffusers
 torch
 einops
 transformers
+argparse
