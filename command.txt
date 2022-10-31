@@ -1,0 +1,1 @@
+python app.py --checkpoint_path="./Comic-Diffusion/comic-diffusion.ckpt" --scheduler_type="lms" --dump_path="./out"
