@@ -6,3 +6,4 @@ transformers
 argparse
 ftfy
 tensorboard
+safetensors
