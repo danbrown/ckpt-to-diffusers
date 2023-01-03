@@ -1,0 +1,4 @@
+python app.py --checkpoint_path="./Comic-Diffusion/comic-diffusion.ckpt" --scheduler_type="lms" --dump_path="./out"
+
+wget -O name.safetensors https://civitai.com/api/download/models/1450
+python ./convert_2/convert_diffusers20_original_sd.py ./Comic-Diffusion/comic-diffusion.safetensors  ./out/comic-diffusion  --v1 --reference_model runwayml/stable-diffusion-v1-5
