@@ -1,0 +1,7 @@
+https://self-development.info/【stable-diffusion】safetensorsをdiffusersで読み込む/
+
+https://note.com/kohya_ss/n/n374f316fe4ad
+
+https://github.com/bmaltais/kohya_ss/tree/master/tools
+
+https://github.com/huggingface/diffusers/tree/main/scripts
