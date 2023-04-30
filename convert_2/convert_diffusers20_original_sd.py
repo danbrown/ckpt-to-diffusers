@@ -71,6 +71,7 @@ def convert(args):
     # copy the files to feature_extractor folder
     file_url = "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/feature_extractor/preprocessor_config.json"
     os.system(f"wget {file_url} -P {os.path.join(args.model_to_save, 'feature_extractor')}")
+    print(f"saved feature_extractor")
 
     # copy the files to safety_checker folder
     file_url = "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/safety_checker/config.json"
@@ -79,10 +80,14 @@ def convert(args):
     os.system(f"wget {file_url} -P {os.path.join(args.model_to_save, 'safety_checker')}")
     file_url = "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/safety_checker/pytorch_model.bin"
     os.system(f"wget {file_url} -P {os.path.join(args.model_to_save, 'safety_checker')}")
-    
-    print(f"saved safety_checker and feature_extractor folders.")
-  
+    print(f"saved safety_checker")
 
+    # remove the model_index.json file
+    os.remove(os.path.join(args.model_to_save, "model_index.json"))
+    file_url = "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/model_index.json"
+    os.system(f"wget {file_url} -P {args.model_to_save}")
+    print(f"saved model_index.json")
+    
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
