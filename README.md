@@ -17,6 +17,7 @@ You should have the checkpoint downloaded in a ckpt or safetensors, check the fo
 ### ⚠️ ATTENTION: both scripts are for diffusion checkpoint models, not LoRAs.
 
 **v1 is only compatible with .ckpt format**
+
 **v2 is compatible with both .ckpt and .safetensors formats, it's the recommended one**
 
 
@@ -30,7 +31,7 @@ python app.py --checkpoint_path="./NAMEHERE.ckpt" --scheduler_type="lms" --dump_
 ## v2
 For v2, run the `./v2/convert_diffusers20_original_sd.py` script with the checkpoint path, the dump path and the reference model.
 
-Check this file if tou need more information: [convert_diffusers20_original_sd.md](https://github.com/danbrown/ckpt-to-diffusers/blob/main/v2/convert_diffusers20_original_sd.md)
+Check this file if you need more information: [convert_diffusers20_original_sd.md](https://github.com/danbrown/ckpt-to-diffusers/blob/main/v2/convert_diffusers20_original_sd.md)
 
 
 ```bash
